@@ -96,7 +96,7 @@ public class ArticleController {
 
         var positionsToday = positionRepository.findAllByIdSale(todaySale.get().getIdSale());
         if (positionsToday.isEmpty()) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         }
 
         return ResponseEntity.ok(positionsToday.get());
