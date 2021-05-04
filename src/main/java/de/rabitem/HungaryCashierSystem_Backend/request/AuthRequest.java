@@ -13,12 +13,13 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 public class AuthRequest {
     @NotNull(message = "Username can not be null")
-    @NotBlank(message = "Username can not be blank")
     @NotEmpty(message = "Username can not be empty")
-    private String userName;
+    // note: not blank annotation also performs not null and not empty check
+    @NotBlank(message = "Username can not be blank")
+    private String username;
 
     @NotNull(message = "Password can not be null")
-    @NotBlank(message = "Password can not be blank")
     @NotEmpty(message = "Password can not be empty")
+    @NotBlank(message = "Password can not be blank")
     private String password;
 }

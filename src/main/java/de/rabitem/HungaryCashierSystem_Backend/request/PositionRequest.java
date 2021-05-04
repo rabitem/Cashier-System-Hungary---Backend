@@ -13,13 +13,13 @@ import javax.validation.constraints.Positive;
 public class PositionRequest {
     @Positive(message = "Count must be greater than 0")
     @NotNull(message = "Count cannot be null")
-    private int menge;
+    private int count;
 
     @NotNull(message = "Selling price cannot be null")
     @Positive(message = "Selling price must be greater than 0")
-    private double verkaufspreis;
+    private double price;
 
     @NotNull(message = "Article Id cannot be null")
     @Positive(message = "Article Id does not match the correct Pattern")
-    private int idArticle;
+    private int articleCode;
 }
