@@ -11,6 +11,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.security.Principal;
 import java.util.Map;
 
 @RestController
@@ -26,8 +27,8 @@ public class AuthController {
 
     @CrossOrigin("http://localhost:3000")
     @GetMapping("/validateToken")
-    public ResponseEntity<Boolean> isAuthenticated() {
-        return ResponseEntity.ok(true);
+    public Principal isAuthenticated(Principal principal) {
+        return principal;
     }
 
     @CrossOrigin("http://localhost:3000")
