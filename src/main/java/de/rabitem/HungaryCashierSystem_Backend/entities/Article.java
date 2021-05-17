@@ -15,7 +15,7 @@ public class Article {
     private Integer numberOfPiecesPerBag;
 
     @Id
-    @Column(name = "idArticle")
+    @Column(name = "idArticle", nullable = false)
     public int getIdArticle() {
         return idArticle;
     }
@@ -25,7 +25,7 @@ public class Article {
     }
 
     @Basic
-    @Column(name = "articleCode")
+    @Column(name = "articleCode", nullable = false)
     public int getArticleCode() {
         return articleCode;
     }
@@ -35,7 +35,7 @@ public class Article {
     }
 
     @Basic
-    @Column(name = "desc_ger")
+    @Column(name = "desc_ger", nullable = false)
     public String getDescGer() {
         return descGer;
     }
@@ -45,7 +45,7 @@ public class Article {
     }
 
     @Basic
-    @Column(name = "desc_eng")
+    @Column(name = "desc_eng", nullable = false)
     public String getDescEng() {
         return descEng;
     }
@@ -55,7 +55,7 @@ public class Article {
     }
 
     @Basic
-    @Column(name = "desc_hun")
+    @Column(name = "desc_hun", nullable = false)
     public String getDescHun() {
         return descHun;
     }
@@ -65,7 +65,7 @@ public class Article {
     }
 
     @Basic
-    @Column(name = "price_per_kg")
+    @Column(name = "price_per_kg", nullable = false)
     public Double getPricePerKg() {
         return pricePerKg;
     }
@@ -75,7 +75,7 @@ public class Article {
     }
 
     @Basic
-    @Column(name = "quantity_per_bag")
+    @Column(name = "quantity_per_bag", nullable = false)
     public Integer getQuantityPerBag() {
         return quantityPerBag;
     }
@@ -85,7 +85,7 @@ public class Article {
     }
 
     @Basic
-    @Column(name = "number_of_pieces_per_bag")
+    @Column(name = "number_of_pieces_per_bag", nullable = false)
     public Integer getNumberOfPiecesPerBag() {
         return numberOfPiecesPerBag;
     }

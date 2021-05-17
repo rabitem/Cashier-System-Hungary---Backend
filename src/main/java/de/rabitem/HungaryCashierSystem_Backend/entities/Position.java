@@ -30,7 +30,7 @@ public class Position {
     }
 
     @Id
-    @Column(name = "idPosition")
+    @Column(name = "idPosition", nullable = false)
     public int getIdPosition() {
         return idPosition;
     }
@@ -40,7 +40,7 @@ public class Position {
     }
 
     @Basic
-    @Column(name = "count")
+    @Column(name = "count", nullable = false)
     public Integer getCount() {
         return count;
     }
@@ -50,7 +50,7 @@ public class Position {
     }
 
     @Basic
-    @Column(name = "price")
+    @Column(name = "price", nullable = false)
     public Double getPrice() {
         return price;
     }

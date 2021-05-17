@@ -10,7 +10,7 @@ public class Sale {
     private Date date;
 
     @Id
-    @Column(name = "idSale")
+    @Column(name = "idSale", nullable = false)
     public int getIdSale() {
         return idSale;
     }
@@ -20,7 +20,7 @@ public class Sale {
     }
 
     @Basic
-    @Column(name = "date")
+    @Column(name = "date", nullable = false)
     public Date getDate() {
         return date;
     }
